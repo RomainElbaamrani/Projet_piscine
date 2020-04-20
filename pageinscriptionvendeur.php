@@ -148,40 +148,40 @@ require_once('layout/header.php')?>
                         <tr>
                         <td><b>Nom: </b></td></tr>
                         <tr><td><p></p></td></tr>
-                        <tr><td><input type="text" style="width: 400px;" name="nom"></td></tr>
+                        <tr><td><input type="text" style="width: 400px;" class="form-control" name="nom"></td></tr>
                         <tr><td><p></p></td></tr>
                         <tr><td><b>Pseudo: </b></td></tr>
                         <tr><td><p></p></td></tr>
-        		    	<tr><td><input type="text" style="width: 400px;" name="pseudo"></td></tr>
+        		    	<tr><td><input type="text" style="width: 400px;" class="form-control" name="pseudo"></td></tr>
                         <tr><td><p></p></td></tr>
                         <tr><td><b>Mot de passe: </b></td></tr>
                         <tr><td><p></p></td></tr>
-                        <tr><td><input type="password" style="width: 400px;" name="mdp1"></td></tr>
+                        <tr><td><input type="password" style="width: 400px;" class="form-control" name="mdp1"></td></tr>
                 <tr><td><p></p></td></tr>
                 <tr>
                     <td><b>Retaper votre mot de passe: </b></td></tr>
                     <tr><td><p></p></td></tr>
-                    <tr><td><input type="password" style="width: 400px;" name="mdp2"></td>
+                    <tr><td><input type="password" style="width: 400px;" class="form-control" name="mdp2"></td>
                 </tr>
                 <tr><td><p></p></td></tr>
                 <tr>
                     <td><b>Photo de profil: </b></td></tr>
                     <tr><td><p></p></td></tr>
-                    <tr><td><input type="text" style="width: 400px;" name="photoprofil"/></td>
+                    <tr><td><input type="text" style="width: 400px;" class="form-control" name="photoprofil"/></td>
                 </tr>
                 <tr><td><p></p></td></tr>
                 <tr><td><p></p></td></tr>
                 <tr>
                     <td><b>E mail: </b></td></tr>
                     <tr><td><p></p></td></tr>
-                    <tr><td><input type="email" style="width: 400px;" name="email"/></td>
+                    <tr><td><input type="email" style="width: 400px;" class="form-control" name="email"/></td>
                 </tr>
                 </table>
                 <table style="width:1200px;">
                 <tr>
         			<td><b>Image de fond: </b></td></tr>
                     <tr><td><p></p></td></tr>
-        			<tr><td><input  style="float:left;margin-top: 10px;"type="radio" name="choix" value="gris"><div class="col-sm-2" style="margin-left:15px;float:left;height:50px; width:90px;background-color:#808080;"></div>
+        			<tr><td><input  style="float:left;margin-top: 10px;"type="radio"  name="choix" value="gris"><div class="col-sm-2" style="margin-left:15px;float:left;height:50px; width:90px;background-color:#808080;"></div>
                     <input  style="float:left;margin-top: 10px; margin-left:15px;"type="radio" name="choix" value="blanc"><div class="col-sm-2" style="margin-left:15px;float:left;height:50px; width:90px;background-color:white;"></div>
                     <input  style="float:left;margin-top: 10px;margin-left:15px;"type="radio" name="choix" value="rose"><div class="col-sm-2" style="margin-left:15px;float:left;height:50px; width:90px;background-color:#FFC0CB;"></div>
                     <input  style="float:left;margin-top: 10px;margin-left:15px;"type="radio" name="choix" value="violet"><div class="col-sm-2" style="margin-left:15px;float:left;height:50px; width:90px;background-color:#EE82EE;"></div>

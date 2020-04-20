@@ -139,8 +139,11 @@
 <body>
 <?php require_once('layout/header.php')?>
 
+
 		<div class="container features" style="height: 1100px; padding-top: 100px; padding-left: 150px;"> 
-			<div class="row"> 
+        <a href = "javascript:history.back()" class="breadcrumb-item"> <i class="fas fa-long-arrow-alt-left"> </i> Previous page</a>
+
+        <div class="row"> 
 				<div class="col-lg-4 col-md-4 col-sm-12">
 				<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" style="width: 500px;">
         	<table>
@@ -148,45 +151,45 @@
                 <br>
                 <tr>
         			<td><b>Nom: </b></td></tr>
-        			<tr><td><input type="text" style="width: 400px;" name="nom"></td>
+        			<tr><td><input type="text" style="width: 400px;" class="form-control" name="nom"></td>
         		</tr>
                 <tr>
                     <td><b>Prénom: </b></td></tr>
-                    <tr><td><input type="text" style="width: 400px;" name="prenom"></td>
+                    <tr><td><input type="text" style="width: 400px;"class="form-control" name="prenom"></td>
                 </tr>
                 <tr>
         			<td><b>Adresse: </b></td></tr>
-        			<tr><td><input type="text" style="width: 400px;" name="adresse1"></td>
+        			<tr><td><input type="text" style="width: 400px;"class="form-control" name="adresse1"></td>
         		</tr>
-        		<tr><td><input type="text" style="width: 400px;" name="adresse2"></td>
+        		<tr><td><input type="text" style="width: 400px;" class="form-control" name="adresse2"></td>
         		</tr>
                 <tr>
                     <td><b>Ville: </b></td></tr>
-                    <tr><td><input type="text" style="width: 400px;" name="ville"></td>
+                    <tr><td><input type="text" style="width: 400px;"class="form-control" name="ville"></td>
                 </tr>
                 <tr>
         			<td><b>Code Postal: </b></td></tr>
-        			<tr><td><input type="number" style="width: 400px;" name="codepostal"></td>
+        			<tr><td><input type="number" style="width: 400px;" class="form-control"name="codepostal"></td>
         		</tr>
                 <tr>
                     <td><b>Pays: </b></td></tr>
-                    <tr><td><input type="text" style="width: 400px;" name="pays"></td>
+                    <tr><td><input type="text" style="width: 400px;" class="form-control" name="pays"></td>
                 </tr>
                 <tr>
                     <td><b>Téléphone: </b></td></tr>
-                    <tr><td><input type="tel" style="width: 400px;" name="telephone"></td>
+                    <tr><td><input type="tel" style="width: 400px;" class="form-control" name="telephone"></td>
                 </tr>
                 <tr>
         			<td><b>Email: </b></td></tr>
-        			<tr><td><input type="email" style="width: 400px;" name="email"></td>
+        			<tr><td><input type="email" style="width: 400px;" class="form-control" name="email"></td>
         		</tr>
                 <tr>
                     <td><b>Mot de passe: </b></td></tr>
-                    <tr><td><input type="password" style="width: 400px;" name="motdepasse1"></td>
+                    <tr><td><input type="password" style="width: 400px;" class="form-control" name="motdepasse1"></td>
                 </tr>
                 <tr>
                     <td><b>Retaper votre mot de passe: </b></td></tr>
-                    <tr><td><input type="password" style="width: 400px;" name="motdepasse2"></td>
+                    <tr><td><input type="password" style="width: 400px;" class="form-control" name="motdepasse2"></td>
                 </tr>
                 </table>
                 <br>
@@ -196,7 +199,10 @@
      En cochant la case, vous confirmez avoir lu et accepté les Conditions d'utilisation. Veuillez vous référer à notre Avis sur les données personnelles pour toute information concernant le traitement de vos données.</p>
             <table style="background: #0F056B; color:white;">
             	<tr>
-                <td colspan="2"><input type="submit" style="background-color: #0F056B; width: 400px; color: white;" value="Valider"></td></tr>
+                <td colspan="2"> 
+                    <input type="submit" class="btn btn-primary" value="Valider">
+                </td>
+            </tr>
                 <?php if ($erreur !="") { echo '<div class="alert alert-danger" role="alert"> Erreur: ' . $erreur . ' </div>'; }?>
             </table>
         </form> 
@@ -205,7 +211,8 @@
 	
 	</div>
 </div>
-	<footer class="page-footer" style="width: 100%" > 
+    <footer class="page-footer" style="width: 100%" > <br><br><br><br><br><br><br><br><br><br><br><br>rb
+    
 			<div class="footer-copyright text-center">&copy; 2019 Copyright | Droit d'auteur: webDynamique.ece.fr
 			</div> 
 		</footer>
