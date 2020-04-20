@@ -2,8 +2,6 @@
 
 session_start();
 
-//echo $_SESSION["id_vendeur"];
-
     $nomitem = isset($_POST["nomitem"])? $_POST["nomitem"] : "";
     $prix = isset($_POST["prix"])? $_POST["prix"] : "";
 
@@ -37,12 +35,14 @@ session_start();
                 // vérifier si l'item est dans le magasin
                 $sql .= " WHERE Nom_item LIKE '$nomitem'";     
             }    
-            $result = mysqli_query($db_handle, $sql);    
+            $result = mysqli_query($db_handle, $sql);  
+            // si l'item n'est pas dans la bdd, afficher un message d'erreur
             if (mysqli_num_rows($result) == 0) 
             {     
                 //l'item est inexistant     
                 echo "l'item n'est pas dans la base de données. <br>";    
             }   
+            //sinon, récupérer l'id de l'item
             else 
             {     
                 while ($data = mysqli_fetch_assoc($result) ) 

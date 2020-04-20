@@ -32,7 +32,7 @@
         {
             if($db_found)
             {
-                //récuperer l'id admin connecté 
+                //récupérer l'id admin connecté 
                 $idAdmin_session = $_SESSION["id_admin"];
                 $sql = "SELECT * FROM `item` INNER JOIN encherir ON item.idItem = encherir.idItem";
                 $result = mysqli_query($db_handle, $sql); ?>
@@ -44,7 +44,7 @@
                 while ($data = mysqli_fetch_assoc($result)) 
                 { 
                     echo "<br>"; 
-                    //récuperer l'id de l'item, de l'admin et du client 
+                    //récupérer l'id de l'item, de l'admin et du client 
                     $idItem = $data['idItem']; 
                     $idAdmin_tab = $data['idAdmin'];
                     $idClient = $data['idClient'];

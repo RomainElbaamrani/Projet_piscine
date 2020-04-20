@@ -18,10 +18,10 @@ if ($identifiant == ""){
 	$erreur .= "Le champ identifiant est vide.<br>";
 }
 if ($password == ""){
-	$erreur .= "le champ mot de passe est vidr.<br>";
+	$erreur .= "le champ mot de passe est vide.<br>";
 }
 
-//si le button 'connexion' est cliqué
+//si le bouton 'connexion' est cliqué
 if (isset($_POST['connexion'])) 
 {
 	if($erreur =="")

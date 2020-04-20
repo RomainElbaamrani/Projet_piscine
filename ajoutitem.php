@@ -49,14 +49,15 @@
             $erreur .= "Un item ne peut pas être une Enchère et un Achat Immédiat.<br>";
         }
 
-        if ($erreur ==""){
+        if ($erreur =="")
+        {
 
             if ($db_found) 
             {
                 $sql = "SELECT * FROM `item`";
                 if($nom != "") 
                 {
-                    //on cherche l'item' avec les paramètres nom, description et prix
+                    //on cherche l'item avec les paramètres nom, description et prix
                     $sql .= " WHERE Nom_item Like '$nom'";
                     if ($description != "") 
                     {
@@ -97,6 +98,10 @@
             {
                 echo "Database not found";
             }
+        }
+        else
+        {
+            echo "Erreur: $erreur";
         }
     }
 

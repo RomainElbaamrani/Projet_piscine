@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- recuperer les scripts depuis le dossier layout/dependencies.php -->
+    <!-- récupérer les scripts depuis le dossier layout/dependencies.php -->
     <?php require_once('layout/dependencies.php')?> 
     <title>Achat Immediat</title>
 </head>
 <body>
-    <!-- recuperer le header dynamic depuis le dossier layout/header.php -->
+    <!-- récupérer le header dynamic depuis le dossier layout/header.php -->
     <?php require_once('layout/header.php')?> 
  
 <div class="container" style="text-align: left; padding-top:25px;">
@@ -42,6 +42,7 @@
                         // afficher les information de l'item 
                         echo "<br>"; 
                         echo "Nom: " . $data['Nom_item'] . "<br>";
+                        // stocker l'image dans une variable et l'afficher à l'aide de la balis img
                         $image = $data['Photo_item'];
                         echo "<td>" . "<img src='$image' height='120' width='100'>" ."</td> <br>";
                         echo "Description: " . $data['Description_item'] . "<br>";
@@ -62,7 +63,7 @@
                  
 
 <br>
-    <!-- acceder à "panier.php" si le bouton "mettre dans le panier" est cliqué -->
+    <!-- accéder à "panier.php" si le bouton "mettre dans le panier" est cliqué -->
     <form action="panier.php" method="post" style="width: 1200px;">
             <tr>
             <td><b>Nom de l'item que vous voulez mettre dans le panier: </b>
@@ -75,7 +76,7 @@
                 <input type="submit" class="btn btn-primary" name="Panier" value="Mettre dans le panier"></div></tr>
         <br><br>
     </form>
-    <!-- acceder à "paiement.php" si le bouton "mettre dans le panier" est cliqué -->
+    <!-- accéder à "paiement.php" si le bouton "mettre dans le panier" est cliqué -->
     <form action="payement.php" method="post" style="width: 1200px;">
             <tr>
             <td><b>Nom de l'item que vous voulez directement acheter: </b>

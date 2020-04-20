@@ -31,7 +31,7 @@ session_start();
                 $sql .= " WHERE Nom_item LIKE '$nomitem'";     
             }    
             $result = mysqli_query($db_handle, $sql);   
-            // si non disponible dans la bdd 
+            // si l'item nes pas dans la bdd 
             if (mysqli_num_rows($result) == 0) 
             {     
                 //Livre inexistant     
@@ -53,7 +53,7 @@ session_start();
                 $result = mysqli_query($db_handle, $sql);     
 
     
-                //on affiche les autres livres dans la BDD     
+                //on affiche les autres livres de la BDD     
                 $sql = "SELECT * FROM 'encherir'";     
                 $result = mysqli_query($db_handle, $sql);     
                 echo "Il vous reste ces items: <br>";     

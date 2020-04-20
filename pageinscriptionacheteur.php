@@ -86,7 +86,6 @@
                 
                 $sql= "INSERT INTO `client`(`Nom_client`, `Prenom_client`, `Password_client`, `Adresse_client`, `Email_client`, `Ville_client`, `Code_postal_client`, `Tel_client`) VALUES ('$nom','$prenom','$motdepasse1','$adresse1','$email','$ville','$codepostal','$telephone') ";
                 $result = mysqli_query($db_handle, $sql);
-                //echo "Add successful." . "<br>";
                 //on affiche le livre ajouté
 				$sql = "SELECT * FROM client";
 				if ($nom != "") 
@@ -115,7 +114,6 @@
                     header('Location: connexionAcheteur.php');
 
 				}
-				//echo "Les données ont été enregistrées.";
 
 		    }
 

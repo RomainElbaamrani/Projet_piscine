@@ -7,7 +7,7 @@
         $db_handle = mysqli_connect('localhost', 'root' , '');
         $db_found = mysqli_select_db($db_handle, $database);
 
-        // verifier le type de connexion (admin, vendeur ou acheteur)
+        // Vérifier le type de connexion (admin, vendeur ou acheteur) et récupérer les informations du compte en fonction de la personne connecté 
         if(isset($_SESSION["id_admin"]))
         {
             if($db_found)

@@ -22,6 +22,7 @@
 				<a href="ajoutitem.php" class="btn btn-outline-primary btn-block btn-lg" style=" margin: 5px 0">Ajouter des items</a><br>
 				<a href="suppressionitem.php" class="btn btn-outline-primary btn-block btn-lg" style=" margin: 5px 0">Supprimer des items</a><br>
 				<?php
+				// si l'utilisateur connecté est un vendeur, afficher un bouton mes offres redirigent vers MesMeilleuresOffres.php
 				if(isset($_SESSION["id_vendeur"]))
 				{?>
 					<a href="MesMeilleuresOffres.php" class="btn btn-outline-primary btn-block btn-lg" style=" margin: 5px 0">Mes offres</a><br>					
